@@ -13,7 +13,7 @@
   border: 0 none;
   width: 100%;
   border:none;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #000000;
 }
 .new-tweet div{
   display:flex;
@@ -36,12 +36,12 @@
 .new-tweet button:hover{
   background-color:transparent;
   border: #6D9B91 solid 1px;
-  transition: all 0.5s ease-in;
+  transition: all 0.7s ease-in;
 
 }
 
 .tweet-container{
-  border: 3px solid #4e4e4e;
+  border: 3px solid #545149;
   padding:20px;
   font-weight: 300;
 }
@@ -58,7 +58,7 @@
 .tweet-container header,
 .tweet-container > div,
 .tweet-container footer > div{
-  margin:0 1.5rem;
+  margin: 20px;
 }
 
 .tweet-container footer > div {
@@ -67,7 +67,7 @@
   justify-content:space-between;
 }
 .tweet-container footer{
-  border-top: 3px solid #4e4e4e;
+  border-top: 3px solid #545149;
   font-size:15px;
 }
 
@@ -78,6 +78,12 @@
 }
 
 .tweet-container:hover{
-  -webkit-box-shadow: 10px 10px 0px 0px rgba(212,212,212,1);
-  -moz-box-shadow: 10px 10px 0px 0px rgba(212,212,212,1);
-  box-shadow: 10px 10px 0px 0px rgba(212,212,212,1);
+  -webkit-box-shadow: 10px 10px 0px 0px rgb(136, 153, 187,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(136, 153, 187,1);
+  box-shadow: 10px 10px 0px 0px rgba(136, 153, 187,1);
+}
+
+  .tweet-container footer {
+    border-top: 3px solid #545149;
+    font-size:15px;
+  }
