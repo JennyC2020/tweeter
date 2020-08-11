@@ -3,9 +3,23 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+ /* Debugging Styling. Remove for production */
+/* * { outline: 2px none  red ; row-gap: 5px; column-gap: 5px;}
+* * { outline: 2px none  green }
+* * * { outline: 2px  solid orange }
+* * * * { outline: 2px  solid blue }
+* * * * * { outline: 2px  solid red }
+* * * * * * { outline: 2px  solid green }
+* * * * * * * { outline: 2px  solid orange }
+* * * * * * * * { outline: 2px  solid blue } */
+/* End of debug code */
+
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,26 +28,25 @@ nav {
   font-family: 'Bungee', cursive;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
 position: relative;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-main{
+main {
   background-color: #f4f1ec;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
- 
+}
+
+article, section {
+  margin-bottom: 40px;
+}
+.counter {
+  font-family: 'Bungee', cursive;
+  font-weight: 700px;
 }
