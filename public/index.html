@@ -21,8 +21,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
-  <script type="text/javascript" src="/scripts/client.js" defer></script>
-  <script type="text/javascript" src="/scripts/composer-char-counter.js" defer></script>
+  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <script src="https://kit.fontawesome.com/cff85b250e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,7 +36,7 @@
   </nav>
 
   <!-- Header -->
-  <header>
+  <header class="unique">
     <div id="image-header">
       <img src="/images/profile-hex.png">
     </div>
@@ -58,6 +59,29 @@
         </div>
       </form>
     </section>
+
+    <article class="tweet-container">
+      <header>
+        <div>
+          <img src="images/profile-hex.png" alt="profile picture">
+          <p class="user-name">User</p>
+        </div>
+        <p>@User</p>
+      </header>
+      <div>
+        <p>TWEEEEET</p>
+      </div>
+      <footer>
+        <div>
+          <p>123 days ago</p>
+          <div>
+            <span>icon</span>
+            <span>icon</span>
+            <span>icon</span>
+          </div>
+        </div>
+      </footer>
+    </article>
   </main>
 </body>
 
