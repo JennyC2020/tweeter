@@ -22,8 +22,9 @@
 
 .new-tweet button{
   border:none;
-  background-color: #ff9f07;
+  background-color: #4056A1;
+  color: #ffffff;
   font-family:"Bungee", cursive; 
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 10px 15px;
 }
