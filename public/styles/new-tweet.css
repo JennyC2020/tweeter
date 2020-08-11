@@ -29,7 +29,9 @@
   border-radius: 5px;
   padding: 10px 15px;
 }
-
+.new-tweet-profile {
+  max-width: 60px;
+}
 
 .new-tweet button:hover{
   background-color:transparent;
@@ -40,7 +42,7 @@
 
 .tweet-container{
   border: 3px solid #4e4e4e;
-  padding:0.5rem;
+  padding:20px;
   font-weight: 300;
 }
 .tweet-container header{
@@ -72,6 +74,7 @@
 .tweet-container:hover header > p{
   visibility: visible;;
   color:#d6d6d6;
+  padding: 20px;
 }
 
 .tweet-container:hover{
