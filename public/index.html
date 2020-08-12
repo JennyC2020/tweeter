@@ -28,21 +28,21 @@
 
 </head>
 
+
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span class="logo">tweeter</span>
+    <span class="logo">Tweeter</span>
     <ul>
-      <li><span>Write</span> a new tweet</li>
+      <li><span>Write</span>a new tweet</li>
     </ul>
   </nav>
 
-  <!-- Header -->
-  <header class="unique">
-    <div id="image-header">
+  <!--Header-->
+  <header>
+    <div>
       <img src="/images/profile-hex.png">
     </div>
-    <br>
     <div>
       <h2>Jenny Citherlet</h2>
     </div>
@@ -50,7 +50,7 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <section class="create-tweet">
+    <section class="compose-tweet">
       <h2>Compose Tweet</h2>
       <form id="new-tweet" method="POST" action="/tweets/">
         <label for="tweet-text">What are you humming about?</label>
@@ -61,7 +61,6 @@
         </div>
       </form>
     </section>
-
     <section class="tweet-container">
     </section>
   </main>
