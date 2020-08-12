@@ -1,55 +1,56 @@
-.create-tweet form {
-  display:block;
-  padding-bottom: 50px;
-}
-.create-tweet label {
+.compose-tweet form {
   display:block;
 }
-.create-tweet textarea {
-  height:15px;
-  background-color: #f4f1ec;
-  color: #545149;
+
+.compose-tweet label {
+  display:block;
+}
+
+.compose-tweet textarea {
+  background: transparent;
   resize: none;
   border: 0 none;
   width: 100%;
   border:none;
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid #454545;
 }
 
-.create-tweet-profile {
-  max-width: 60px;
-}
-.create-tweet div {
+.compose-tweet div {
   display:flex;
   justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.create-tweet button {
-  border:none;
-  background-color: #4056A1;
-  color: #ffffff;
+  margin-top: 15px;
   font-family:"Bungee", cursive; 
-  border-radius: 5px;
-  padding: 10px 15px;
 }
 
-.create-tweet button:hover {
-  background-color:transparent;
-  border: #6D9B91 solid 1px;
-  transition: all 0.7s ease-in;
+.compose-tweet div .error {
+  color:red;
 }
 
 .tweet-container .tweet {
-  border: 3px solid #545149;
-  padding:20px;
-  margin-bottom: 15px;
+  border: 3px solid #454545;
   font-weight: 300;
+  margin-bottom: 40px;
+  padding: 20px;
 }
+
 .tweet header {
   display:flex;
   align-items:center;
   justify-content:space-between;
+}
+
+.compose-tweet button {
+  border:none;
+  background-color: #4056A1;
+  color: #ffffff;
+  padding:10px 15px;
+  border-radius: 4px;;
+}
+
+.compose-tweet button:hover {
+  background-color:transparent;
+  border: #7a91df solid 1px;
+  transition: all 0.8s ease-in;
 }
 
 .tweet header p {
@@ -59,7 +60,7 @@
 .tweet header,
 .tweet div,
 .tweet footer div {
-  margin: 20px;
+  margin:0 20px;
 }
 
 .tweet footer div {
@@ -68,23 +69,17 @@
   justify-content:space-between;
 }
 .tweet footer {
-  border-top: 3px solid #545149;
+  border-top: 3px solid #454545;
   font-size:15px;
 }
 
 .tweet-container .tweet:hover header p {
-  visibility: visible;
-  color:#e2e2e2;
-  padding: 20px;
+  visibility: visible;;
+  color:#b8b4b4;
 }
 
 .tweet-container .tweet:hover {
-  -webkit-box-shadow: 10px 10px 0px 0px rgb(136, 153, 187,1);
-  -moz-box-shadow: 10px 10px 0px 0px rgba(136, 153, 187,1);
-  box-shadow: 10px 10px 0px 0px rgba(136, 153, 187,1);
+  box-shadow: 10px 10px 0px 0px rgba(166, 194, 236);
+  -webkit-box-shadow: 10px 10px 0px 0px rgb(166, 194, 236);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(166, 194, 236);
 }
-
-  .tweet-container footer {
-    border-top: 3px solid #545149;
-    font-size:15px;
-  }
