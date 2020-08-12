@@ -1,12 +1,12 @@
-.new-tweet form{
+.create-tweet form {
   display:block;
   padding-bottom: 50px;
 }
-.new-tweet label{
+.create-tweet label {
   display:block;
 }
-.new-tweet textarea{
-  height:15;
+.create-tweet textarea {
+  height:15px;
   background-color: #f4f1ec;
   color: #545149;
   resize: none;
@@ -15,13 +15,17 @@
   border:none;
   border-bottom: 3px solid #000000;
 }
-.new-tweet div{
+
+.create-tweet-profile {
+  max-width: 60px;
+}
+.create-tweet div {
   display:flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
 
-.new-tweet button{
+.create-tweet button {
   border:none;
   background-color: #4056A1;
   color: #ffffff;
@@ -29,55 +33,52 @@
   border-radius: 5px;
   padding: 10px 15px;
 }
-.new-tweet-profile {
-  max-width: 60px;
-}
 
-.new-tweet button:hover{
+.create-tweet button:hover {
   background-color:transparent;
   border: #6D9B91 solid 1px;
   transition: all 0.7s ease-in;
-
 }
 
-.tweet-container{
+.tweet-container .tweet {
   border: 3px solid #545149;
   padding:20px;
+  margin-bottom: 15px;
   font-weight: 300;
 }
-.tweet-container header{
+.tweet header {
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 
-.tweet-container header > p{
+.tweet header p {
   visibility: hidden;
 }
 
-.tweet-container header,
-.tweet-container > div,
-.tweet-container footer > div{
+.tweet header,
+.tweet div,
+.tweet footer div {
   margin: 20px;
 }
 
-.tweet-container footer > div {
+.tweet footer div {
   display:flex;
   align-items: center;
   justify-content:space-between;
 }
-.tweet-container footer{
+.tweet footer {
   border-top: 3px solid #545149;
   font-size:15px;
 }
 
-.tweet-container:hover header > p{
-  visibility: visible;;
-  color:#d6d6d6;
+.tweet-container .tweet:hover header p {
+  visibility: visible;
+  color:#e2e2e2;
   padding: 20px;
 }
 
-.tweet-container:hover{
+.tweet-container .tweet:hover {
   -webkit-box-shadow: 10px 10px 0px 0px rgb(136, 153, 187,1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(136, 153, 187,1);
   box-shadow: 10px 10px 0px 0px rgba(136, 153, 187,1);
