@@ -3,8 +3,6 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
-// Fake data taken from initial-tweets.json
 const data = [
   {
     "user": {
@@ -34,11 +32,12 @@ const data = [
 
 $(document).ready(function() {
 
+
   const renderTweets = function(tweets) {
     console.log(tweets);
-    for (let entry of tweets) { // loops through tweets
-      let $renderedTweet = createTweetElement(entry); // calls createTweetElement for each tweet
-      $("section.tweet-container").append($renderedTweet); // takes return value and appends it to the tweets container
+    for (let entry of tweets) {
+      let $el = createTweetElement(entry);
+      $("section.tweet-container").append($el);
     }
   };
 
@@ -67,7 +66,8 @@ $(document).ready(function() {
   </article> `);
 
     return $tweet;
+
   };
+  renderTweets(data);
 
 });
-renderTweets(data);
