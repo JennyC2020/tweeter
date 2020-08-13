@@ -42,7 +42,7 @@
 .compose-tweet button {
   border:none;
   background-color: #4056A1;
-  color: #ffffff;
+  color: #000000;
   padding:10px 15px;
   border-radius: 4px;;
 }
@@ -82,4 +82,8 @@
   box-shadow: 10px 10px 0px 0px rgba(166, 194, 236);
   -webkit-box-shadow: 10px 10px 0px 0px rgb(166, 194, 236);
   -moz-box-shadow: 10px 10px 0px 0px rgba(166, 194, 236);
+}
+
+.fa {
+  padding: 0 15px;
 }
