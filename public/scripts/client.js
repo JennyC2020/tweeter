@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   const renderTweets = function(tweets) {
     console.log(tweets);
-    $("section.tweet-container").empty();
+    $("section.tweet-container").empty(); //empties the container so only new ones will appear
     for (let entry of tweets) {
       let $element = createTweetElement(entry);
       $("section.tweet-container").prepend($element);
@@ -16,6 +16,7 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(tweet) {
+    const time = `${moment(tweet.created_at).toNow(true)} ago`;
     const $tweet = $(`<article class="tweet">
     <header>
       <div>
@@ -29,7 +30,7 @@ $(document).ready(function() {
     </div>
     <footer>
       <div>
-        <p>moment().format(); </p>
+      <p>${time}</p>
         <div>
          <span class="fa fa-flag"></span>
           <span class="fa fa-retweet"></span>
@@ -65,12 +66,13 @@ $(document).ready(function() {
       alert("This field cannot be empty.");
     } else {
       $.post('/tweets', serialized)
-        .then(() => loadTweets());
+        .then(() => loadTweets()); // fetches new tweets without reloading the page
 
     }
     $text.val("");
   });
 
   loadTweets();
+
 
 });
