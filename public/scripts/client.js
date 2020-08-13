@@ -8,9 +8,10 @@ $(document).ready(function() {
 
   const renderTweets = function(tweets) {
     console.log(tweets);
+    $("section.tweet-container").empty();
     for (let entry of tweets) {
-      let $el = createTweetElement(entry);
-      $("section.tweet-container").append($el);
+      let $element = createTweetElement(entry);
+      $("section.tweet-container").prepend($element);
     }
   };
 
@@ -28,7 +29,7 @@ $(document).ready(function() {
     </div>
     <footer>
       <div>
-        <p>${tweet.content.created_at}</p>
+        <p>moment().format(); </p>
         <div>
          <span class="fa fa-flag"></span>
           <span class="fa fa-retweet"></span>
@@ -64,9 +65,9 @@ $(document).ready(function() {
       alert("This field cannot be empty.");
     } else {
       $.post('/tweets', serialized)
-        .then(() => console.log("Tweet has been successfuly created"));
+        .then(() => loadTweets());
+
     }
-    $text.val("");
   });
 
   loadTweets();
