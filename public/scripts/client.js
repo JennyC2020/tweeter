@@ -68,6 +68,7 @@ $(document).ready(function() {
         .then(() => loadTweets());
 
     }
+    $text.val("");
   });
 
   loadTweets();

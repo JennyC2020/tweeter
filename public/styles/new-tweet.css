@@ -42,14 +42,14 @@
 .compose-tweet button {
   border:none;
   background-color: #4056A1;
-  color: #000000;
+  color: #ffffff;
   padding:10px 15px;
   border-radius: 4px;;
 }
 
 .compose-tweet button:hover {
-  background-color:transparent;
-  border: #7a91df solid 1px;
+  background-color:#7c97f0;
+  border: #2a3557 solid 1px;
   transition: all 0.8s ease-in;
 }
 
