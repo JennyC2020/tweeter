@@ -1,3 +1,7 @@
+.compose-tweet form{
+  display:block;
+}
+
 .compose-tweet form {
   display:block;
 }
@@ -15,16 +19,16 @@
   border-bottom: 3px solid #454545;
 }
 
-.compose-tweet div {
+#new-tweet div {
   display:flex;
   justify-content: space-between;
   margin-top: 15px;
   font-family:"Bungee", cursive; 
 }
 
-.compose-tweet div .error {
+/* .compose-tweet div .error {
   color:red;
-}
+} */
 
 .tweet-container .tweet {
   border: 3px solid #454545;
@@ -86,4 +90,17 @@
 
 .fa {
   padding: 0 15px;
+}
+
+.error {
+  color:red;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.error-panel {
+  border: 2px solid red;
+ display: none;
+  margin-bottom: 15px;
+}
+.error-panel .error {
+  margin: 10px; 
 }
