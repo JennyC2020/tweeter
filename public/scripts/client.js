@@ -70,4 +70,17 @@ $(document).ready(function() {
   };
   renderTweets(data);
 
+
+  const $form = $('#new-tweet');
+  $form.on('submit', (event) => {
+    event.preventDefault();
+    const serialized = $form.serialize();
+    console.log(serialized);
+
+    $.post('/tweets', serialized)
+      .then(() => console.log("Tweet has been successfuly created"));
+  })
+
+
+
 });
