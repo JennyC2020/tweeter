@@ -6,6 +6,12 @@
 
 $(document).ready(function() {
 
+  const escape = function(str) {
+    const div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const renderTweets = function(tweets) {
     console.log(tweets);
     $("section.tweet-container").empty(); //empties the container so only new ones will appear
@@ -26,7 +32,7 @@ $(document).ready(function() {
       <p>${tweet.user.handle}</p>
     </header>
     <div>
-      <p>${tweet.content.text}</p>
+    <p>${escape(tweet.content.text)}</p>
     </div>
     <footer>
       <div>
