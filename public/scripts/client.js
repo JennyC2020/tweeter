@@ -61,10 +61,13 @@ $(document).ready(function() {
     let $text = $form.find("#tweet-text");
     console.log("$text:", $text.val());
     if ($text.val().length > 140) {
-      alert("Input cannot exceed 140 characters.");
+      $(".error-panel").slideDown("slow");
+      $(".error-panel p").text("Maximun character allowed is 140.");
     } else if (!$text.val()) {
-      alert("This field cannot be empty.");
+      $(".error-panel").slideDown("slow");
+      $(".error-panel p").text("This field cannot be left empty. Make sure you type in your text below.");
     } else {
+      $(".error-panel").hide();
       $.post('/tweets', serialized)
         .then(() => loadTweets()); // fetches new tweets without reloading the page
 
