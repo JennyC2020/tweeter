@@ -55,10 +55,18 @@ $(document).ready(function() {
   $form.on('submit', (event) => {
     event.preventDefault();
     const serialized = $form.serialize();
-    console.log(serialized);
 
-    $.post('/tweets', serialized)
-      .then(() => console.log("Tweet has been successfuly created"));
+    let $text = $form.find("#tweet-text");
+    console.log("$text:", $text.val());
+    if ($text.val().length > 140) {
+      alert("Input cannot exceed 140 characters.");
+    } else if (!$text.val()) {
+      alert("This field cannot be empty.");
+    } else {
+      $.post('/tweets', serialized)
+        .then(() => console.log("Tweet has been successfuly created"));
+    }
+    $text.val("");
   });
 
   loadTweets();
