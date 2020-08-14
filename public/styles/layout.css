@@ -4,18 +4,6 @@
  * Do not modify these two selectors, please
  */
 
- /* Debugging Styling. Remove for production */
-/* * { outline: 2px none  red ; row-gap: 5px; column-gap: 5px;}
-* * { outline: 2px none  green }
-* * * { outline: 2px  solid orange }
-* * * * { outline: 2px  solid blue }
-* * * * * { outline: 2px  solid red }
-* * * * * * { outline: 2px  solid green }
-* * * * * * * { outline: 2px  solid orange }
-* * * * * * * * { outline: 2px  solid blue } */
-/* End of debug code */
-
-
 html {
   box-sizing: border-box;
 }

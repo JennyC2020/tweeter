@@ -1,4 +1,4 @@
-nav{
+nav {
   display:flex;
   height: 120px;
   width: 100%;
@@ -11,23 +11,8 @@ nav{
   top: 0;;
 }
 
-.logo{
+.logo {
   font-family:"Bungee", cursive; 
-}
-nav ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-nav ul li {
-  display: inline-block;
-  margin-left: -2px;
-  margin-right: 2rem;
-} 
-
-#write-tweet {
-  display: flex;
-  flex-direction: column;
 }
 
 nav button {
@@ -39,13 +24,16 @@ nav button {
   border-radius: 0px;
   color: #FFFFFF;
   font-family: "Source Sans Pro";
-
 }
 
 nav button span {
   font-weight: 600;
 }
 
+#write-tweet {
+  display: flex;
+  flex-direction: column;
+}
 #write-tweet i {
   align-self: center;
   margin: 0 0 20px;
