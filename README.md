@@ -27,12 +27,6 @@ This app has a `responsive` layout that supports **Tablet** and **Desktop** devi
 
 ### App Functionality
 
-### Toggle Submission Form / Webpage Redirection
-!["Buttons Functionality"]()
-
-### Tweet Submission
-!["Submitting Tweets"](https://github.com/MaxWong03/tweeter/blob/master/docs/subTweet.gif)
-
 ## General Features
 1) Users can submit tweets
 2) Users can browse all submitted tweets
