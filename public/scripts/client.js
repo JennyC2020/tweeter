@@ -25,11 +25,11 @@ $(document).ready(function() {
     const time = `${moment(tweet.created_at).toNow(true)} ago`;
     const $tweet = $(`<article class="tweet">
     <header>
-      <div>
+      <div class="user-details">
         <img src="${tweet.user.avatars}" alt="profile picture">
         <p class="user-name">${tweet.user.name}</p>
       </div>
-      <p>${tweet.user.handle}</p>
+      <p class="user-handle">${tweet.user.handle}</p>
     </header>
     <div>
     <p>${escape(tweet.content.text)}</p>
@@ -37,7 +37,7 @@ $(document).ready(function() {
     <footer>
       <div>
       <p>${time}</p>
-        <div>
+        <div class="feedback">
          <span class="fa fa-flag"></span>
           <span class="fa fa-retweet"></span>
           <span class="fa fa-heart"></span>
@@ -68,10 +68,10 @@ $(document).ready(function() {
     console.log("$text:", $text.val());
     if ($text.val().length > 140) {
       $(".error-panel").slideDown("slow");
-      $(".error-panel p").text("Maximun character allowed is 140.");
+      $(".error-panel p").text(" 🛑 Maximun 140 characters.");
     } else if (!$text.val()) {
       $(".error-panel").slideDown("slow");
-      $(".error-panel p").text("This field cannot be left empty. Make sure you type in your text below.");
+      $(".error-panel p").text(" 🛑 This field cannot be left empty. Make sure you type in your text below.");
     } else {
       $(".error-panel").hide();
       $.post('/tweets', serialized)
